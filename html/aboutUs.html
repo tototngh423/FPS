@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      body {
+        margin: 20px;
+        padding: 0;
+        box-sizing: border-box;
+        background-color: white;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        background-image: url(/img/별사진.gif);
+      }
+      #container {
+        width: 100%;
+        height: 100vh;
+        /* background-color: rgba(108, 188, 190, 0.4); */
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+      }
+
+      /* 원 회전시키기 */
+      #spinning-circle {
+        margin-bottom: 100px;
+        width: 40px;
+        height: 100px;
+        position: absolute;
+        bottom: 0px;
+        left: 0px;
+
+        animation: rotateCircle 6s infinite;
+      }
+      .circle {
+        background-color: white;
+        width: 10px;
+        height: 10px;
+        border-radius: 50%;
+      }
+
+      @keyframes rotateCircle {
+        0% {
+          transform: translateX(100px);
+        }
+        100% {
+          transform: translateX(1500px);
+        }
+      }
+
+      #growing-rectangle {
+        display: flex;
+        justify-content: space-between;
+      }
+      .oblong {
+        width: 20px;
+        height: 20px;
+        margin-left: 100px;
+        margin-right: 100px;
+        margin-bottom: 150px;
+        color: white;
+        font-size: 40px;
+        animation: growingOblong 2s ease-in-out infinite;
+      }
+
+      .oblong:nth-child(1) {
+        animation-delay: 0ms;
+      }
+      .oblong:nth-child(2) {
+        animation-delay: 200ms;
+      }
+      .oblong:nth-child(3) {
+        animation-delay: 300ms;
+      }
+      .oblong:nth-child(4) {
+        animation-delay: 400ms;
+      }
+      .oblong:nth-child(5) {
+        animation-delay: 500ms;
+      }
+      @keyframes growingOblong {
+        0% {
+          transform: scaleY(0.9);
+          transform-origin: bottom;
+        }
+        50% {
+          transform: scaleY(1.5);
+          transform-origin: bottom;
+        }
+        100% {
+          transform: scaleY(0.9);
+          transform-origin: bottom;
+        }
+      }
+      .hamster {
+        position: absolute;
+        top: 0.1%;
+        font-size: 70px;
+        color: white;
+      }
+      .hamster + p {
+        position: absolute;
+        top: 15%;
+        font-size: 60px;
+        color: white;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="container">
+      <h1 class="hamster">저희는 웹페이지에 대한 열정으로 뭉친</h1>
+      <p>5마리의 햄스터 컴퍼니!!!</p>
+      <!-- 원 -->
+      <div id="spinning-circle">
+        <div class="circle">
+          <img src="../img/햄스터2.png" alt="" />
+        </div>
+        <div class="circle"></div>
+        <div class="circle"></div>
+      </div>
+      <!-- 직사각형 -->
+      <div id="growing-rectangle">
+        <div class="oblong">대빵 김수호</div>
+        <div class="oblong">침착 김민웅</div>
+        <div class="oblong">지능 김지원</div>
+        <div class="oblong">멘탈 신현진</div>
+        <div class="oblong">빵글 유승연</div>
+      </div>
+    </div>
+  </body>
+</html>

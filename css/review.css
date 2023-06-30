@@ -1,0 +1,249 @@
+body{
+    background-image: url(../KakaoTalk_20230628_121833218.gif);
+}
+.container{
+    width: 1500px;
+    min-height: 100vh;
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+    margin: 0;
+    padding: 0;
+}
+#side{
+    width: 300px;
+    color: whitesmoke
+}
+#side-logo{
+    text-align: center;
+    line-height: 100px;
+}
+#side-logo a{
+    font-size: 30px;
+    font-weight: bold;
+    text-decoration: none;
+    color: whitesmoke;
+    font-family: Georgia, "Times New Roman", serif;
+}
+#categori{
+    display: flex;
+    flex-direction: column;
+    font-size: 20px;
+    margin: 0 0 0 35px;
+}
+#categori a{
+    color: whitesmoke;
+    text-decoration: none;
+    margin: 30px 0;
+}
+#main{
+    width: 80%;
+    position: absolute;
+    left: 300px;
+}
+#info{
+    width: 100%;
+    height: 500px;
+    display: flex;
+}
+#game-title{
+    color: whitesmoke;
+    position: absolute;
+    top: 30px;
+    left: 20px;
+    font-size: 50px;
+}
+#img-container{
+    width: 30%;
+}
+#game-img{
+    width: 350px;
+    height: 350px;
+    border-radius: 20px;
+    background-color: grey;
+    position: relative;
+    top: 110px;
+    left: 20px;
+}
+#game-info{
+    width: 740px;
+    height: 350px;
+    display: flex;
+    position: relative;
+    top: 110px;
+    left: 40px;
+    color: whitesmoke;
+    background-color: rgba(32, 31, 31, 0.881);
+    border-radius: 20px;
+    line-height: 55px;
+    padding: 15px;
+    box-sizing: border-box;
+}
+#info-title{
+    width: 20%;
+    display: flex;
+    flex-direction: column;
+}
+#info-main{
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+}
+#review-input{
+    width: 1200px;
+    height: 100px;
+    display: flex;
+    position: relative;
+}
+#user-input{
+    width: 800px;
+    height: 75px;
+    position: relative;
+    left: 10px;
+    margin: 5px;
+    padding: 0 15px;
+    box-sizing: border-box;
+    border-radius: 5px;
+    font-size: 20px;
+}
+#star{
+    position: relative;
+    margin: 10px;
+    top: 10px;
+
+}
+.star {
+    position: relative;
+    font-size: 2rem;
+    color: #ddd;
+}
+.star input {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    opacity: 0;
+    cursor: pointer;
+}
+.star span {
+    width: 0;
+    position: absolute; 
+    left: 0;
+    color: #742ecc;
+    overflow: hidden;
+    pointer-events: none;
+}
+#tag{
+    width : 50px;
+    height: 80px;
+    margin: 5px;
+    padding: 3px;
+    box-sizing: border-box;
+    background-color: #742ecc;
+    border: none;
+    border-radius: 10px;
+    color: rgba(245, 239, 239, 0.9);
+    font-weight: 800;
+    cursor: pointer;
+    text-align: center;
+}
+#tag span{
+    position: relative;
+    top:22px;
+    font-size: 20px;
+}
+#tag-select{
+    position: absolute;
+    right: 150px;
+    display: none;
+    border-radius: 20px;
+    width: 180px;
+    height: 180px;
+    background-color: rgba(32, 31, 31, 0.881);
+    padding: 10px;
+    box-sizing: border-box;
+    justify-content: space-around;  
+}
+#tag-select input{
+    width: 150px;
+}
+#tag-select button{
+    padding: 3px 5px;
+    margin: 2px;
+    background-color: #742ecc;
+    border: none;
+    border-radius: 5px;
+    color: rgba(245, 239, 239, 0.9);
+}
+#tag-select span{
+    color: whitesmoke;
+}
+#input-btn{
+    width: 80px;
+    height: 80px;
+    margin: 5px;
+    padding: 3px;
+    box-sizing: border-box;
+    background-color: #742ecc;
+    border: none;
+    border-radius: 10px;
+    font-size: 20px;
+    border-color: black;
+    color: rgba(245, 239, 239, 0.9);
+    font-weight: 700;
+    cursor: pointer;
+}
+#review-container{
+    width: 1100px;
+    min-height: 500px;
+    background-color: rgba(32, 31, 31, 0.881);
+    border-radius: 20px;
+    padding: 50px 0 50px 30px;
+    margin: 15px;
+}
+.user-review{
+    margin: 10px 0;
+}
+.user{
+    position: relative;
+    left: 10px;
+    color: whitesmoke;
+    font-size: 18px;
+    font-style: italic;
+}
+.review{
+    display: flex;
+}
+.text-box{
+    width: 900px;
+    height: 75px;
+    background-color: white;
+    border: 2px solid black;
+    border-radius: 5px;
+    padding: 10px;
+    box-sizing: border-box;
+}
+.text-box span{
+    font-size: 20px;
+    line-height: 55px;
+}
+.star-box{
+    width: 200px;
+    position: relative;
+    top: 8px;
+    left: 20px;
+    font-size: 2rem;
+    color: #742ecc;
+}
+.user-star input {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    opacity: 0;
+}
+.user-tag{
+    position: relative;
+    left: 10px;
+    color:whitesmoke
+}

@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link
+      rel="shorcut icon"
+      sizes="16x16 32x32 64x64"
+      href="https://search.pstatic.net/common/?src=http%3A%2F%2Fblogfiles.naver.net%2FMjAyMTA0MDdfMTgg%2FMDAxNjE3ODA1OTE5NTI1.tjTHOarQQV4zr5k76MOK1rwMcju1bZzjCkkC1LGI5kwg.AodVJd7tUsNSSDVDxnxuX3H2f5UT7sCM6rVJqWItJBsg.PNG.mini120%2F%25C3%25DD%25B3%25A2%25BE%25E7%25B4%25D4_1.png&type=sc960_832"
+    />
+    <title>햄컴-에이펙스 레전드</title>
+    <link rel="stylesheet" href="../css/review.css" />
+</head>
+<body>
+    <div class="container">
+
+        <div id="side">
+            <div id="side-logo">
+                <a href="/html/mindex.html">Hamster Company</a>
+            </div>
+            <div id="categori">
+                <a href="./review_오버워치2.html">오버워치2</a>
+                <a href="./review_배틀그라운드.html">배틀그라운드</a>
+                <a href="./review_타르코프.html">Escape frmo Tarkov</a>
+                <a href="./review_데스티니 가디언즈.html">데스티니 가디언즈</a>
+                <a href="./review_콜옵.html">콜 오브 듀티 : 모던 워페어</a>
+                <a href="./review_카스글옵.html">카운터 스트라이크 : <br>글로벌 오펜시브</a>
+                <a href="./review_발로란트.html">발로란트</a>
+            </div>
+        </div>
+    
+    
+        <div id="main">
+            <div id="info">
+                <div id="game-title">에이펙스 레전드</div>
+                <div id="img-container">
+                    <img src="https://www.gamevu.co.kr/news/photo/201903/13201_27026_16.jpg" alt="" id="game-img">
+                </div>
+                <div id="game-info">
+                    <div id="info-title">
+                        <span>출시일</span>
+                        <span>유통</span>
+                        <span>플랫폼</span>
+                        <span>장르</span>
+                        <span>개발</span>
+                    </div>
+                    <div id="info-main">
+                        <span>2019년 2월 5일</span>
+                        <span>일렉트로닉 아츠</span>
+                        <span>PS4, XBOX ONE, WINDOWS, NS 등</span>
+                        <span>배틀로얄, 히어로 슈팅 게임</span>
+                        <span>리스폰 엔터테인먼트</span>
+                    </div>
+                </div>
+            </div>
+
+            <div id="review-input">
+                <input type="text" id="user-input" placeholder="한 줄 평을 남겨주세요.">
+                <div id="star">
+                    <span class="star">
+                        ★★★★★
+                        <span>★★★★★</span>
+                        <input type="range" oninput="drawStar(this)" value="1" step="1" min="0" max="10">
+                    </span>
+                </div>
+                <div id="tag"><span>Tag</span></div>
+                <div id="tag-select">
+                    <div  id="tag-input">
+                        <input type="text">
+                        <button class="tag" id="add-btn">추가</button>
+                        <button class="tag" id="remove-btn">초기화</button>
+                    </div>
+                </div>
+                <button id="input-btn">submit</button>
+            </div>
+
+            <div id="review-container">
+            </div>
+
+        </div>
+
+    </div>
+    <script src="../js/jquery-3.7.0.js"></script>
+    <script src="../js/review.js"></script>  
+</body>
+</html>

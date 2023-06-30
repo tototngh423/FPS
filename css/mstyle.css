@@ -1,0 +1,126 @@
+/* default */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+body{
+    background-image: url("/img/KakaoTalk_20230628_121833218.gif");
+    margin: 0;
+}
+
+img {
+    vertical-align: middle;
+    border: none;
+    width: 900px;
+    height: 400px;
+}
+
+#container {
+    width: 1024px;
+    margin: auto;
+}
+
+/* main container slide */
+#container-main-img {
+    width: 1024px;
+    height: 400px;
+    margin: auto;
+    margin-bottom: 20px;
+    display: flex;
+}
+
+.slider{
+    display: flex;
+    /* margin-left: 50px; */
+    margin-top: 30px;
+    width: 900px;
+    height: 400px;
+    overflow: hidden;
+    list-style: none;
+}
+
+.slide {
+    width: 900px;
+    height: 400px;
+    transition: transform 1s;
+    transform: translateX(0px);
+}
+
+/* 슬라이더 버튼 */
+.btn {
+    width: 30px;
+    height: 30px;
+    position: relative;
+    margin: 3px;
+}
+.prev-btn {
+    float: left;
+    top: 200px;
+    transform: rotate(180deg);
+    margin-right: 10px;
+}
+.next-btn {
+    float: right;
+    top: 200px;
+    margin-left: 10px;
+}
+.prev-btn:hover{
+    cursor: pointer;
+    
+}
+.next-btn:hover{
+    cursor: pointer;
+}
+
+/* contents */
+.contents-img{
+    width: 200px;
+    height: 200px;
+    margin: 2px;
+    
+    /* margin-left: 15px; */
+}
+
+.contents-img:hover{
+    transform: scale(1.1);
+}
+
+#content-img{
+    margin-top: 40px;
+    margin-left: 50px;
+}
+
+
+/* navigation */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--background-color);
+    padding: 8px 12px;
+    margin: 10px 200px 0px 200px;
+    font-family: Georgia, "Times New Roman", serif;
+    color: white;
+  }
+  .navbar__logo i {
+    padding-left: 0;
+    margin-left: 20px;
+  }
+  a {
+    text-decoration: none;
+    color: var(--text-color);
+    margin-right: 20px;
+  }
+  .navbar__menu {
+    list-style: none;
+    display: flex;
+    margin: 0 20px 0 20px;
+    float: right;
+  }
+  
+  .navbar__menu li {
+    padding: 8px 20px;
+  }
+  
